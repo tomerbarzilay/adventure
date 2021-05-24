@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        font-family: sans-serif;
+        overflow: hidden;
+      }
+      body {
+        display: flex;
+        flex-direction: row;
+      }
+      p {
+        margin: 1ex 1em 1ex 1em;
+        text-align: justify;
+      }
+      #description {
+        flex-basis: 50%;
+        background-color: #301;
+      }
+      #picture {
+        float: left;
+        margin: 1em;
+      }
+      #interaction {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+      }
+      #history {
+        flex-basis: 100%;
+        background-color: #103;
+        height: calc(100% - 3em);
+        overflow: scroll;
+        scrollbar-width: none;
+      }
+      #history::-webkit-scrollbar { display: none; }
+      #input {
+        background-color: #004;
+        color: white;
+        font-size: 22;
+        width: 50vw;
+        border: 10px solid #206;
+        height: 3em;
+      }
+      #input:focus {
+        outline: none;
+      }
+    </style>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="description">
+      <img id="picture" src="http://barzilay.org/misc/eli-small.jpg">
+      <p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property” (which was temporarily done by the main-size keyword until deprecated). The content keyword means “size it based on the item's content” — this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren max-content, min-content, and fit-content do.  This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property” (which was temporarily done by the main-size keyword until deprecated). The content keyword means “size it based on the item's content” — this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren max-content, min-content, and fit-content do.</p>
+      <p>This defines the default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword. The auto keyword means “look at my width or height property” (which was temporarily done by the main-size keyword until deprecated). The content keyword means “size it based on the item's content” — this keyword isn't well supported yet, so it's hard to test and harder to know what its brethren max-content, min-content, and fit-content do.
+      </p>
+    </div>
+    <div id="interaction">
+      <div id="history"></div>
+      <input id="input">
+    </div>
+  </body>
+</html>

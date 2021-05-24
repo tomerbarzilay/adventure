@@ -1,0 +1,16 @@
+[
+  {"name": "home",
+   "desc": ["This is your home, it is cozy"],
+   "exits": {"south": "meadow"}
+  },
+  {"name": "meadow",
+   "desc": ["You are in a grassy green pasture.",
+            "Cows are lazily grazing the grass, and",
+            "bioconvert it to piles of dung."],
+   "exits": {"south": "junkyard"}
+  },
+  {"name": "junkyard",
+   "desc": ["You are standing in the middle of huge piles of crap.",
+            "You throw up a little in your mouth."]
+  }
+]
