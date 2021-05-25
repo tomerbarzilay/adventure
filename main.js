@@ -1,8 +1,6 @@
 // ----------------------------------------------------------------------------
 
-function $(id) {
-  return document.getElementById(id);
-}
+const $ = id => document.getElementById(id);
 
 const initCallbacks = [];
 const onInit = cb => initCallbacks.push(cb);
